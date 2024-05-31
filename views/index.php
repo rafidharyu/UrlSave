@@ -13,6 +13,7 @@ if (!isset($_SESSION['user_id'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="src/output.css" rel="stylesheet">
     <title>index</title>
 </head>
 <body>
@@ -24,7 +25,8 @@ if (!isset($_SESSION['user_id'])) {
             <h3 class="font-bold text-3xl text-white">Hello <?php echo$_SESSION['username']; ?>!</h3>
             <p class="font-normal text-xl text-white pb-4">Welcome to Url Save Dashboard!</p>
             <p class="font-normal text-xl text-white">Perfect Link Organization <br>
-Save, title, and add descriptions to every URL you find.<br> Creating an organized link collection is now easier than ever.
+                Save, title, and add descriptions to every URL you find.<br> 
+                Creating an organized link collection is now easier than ever.
             </p>
         </div>
         <div class="absolute w-[32%] top-20 pt-2 end-40  me-10">
@@ -33,6 +35,7 @@ Save, title, and add descriptions to every URL you find.<br> Creating an organiz
     </div>
 
     <?php include('./components/post_table.php'); ?>
+    <?php include('./components/footer.php'); ?>
 
 </body>
 </html>

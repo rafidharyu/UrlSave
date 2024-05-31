@@ -23,7 +23,7 @@ if (!isset($_SESSION['user_id'])) {
     <div class="w-full px-16 py-20 mt-6 overflow-hidden bg-white rounded-lg lg:max-w-4xl">
 
       <div class="mb-4">
-        <h1 class="font-serif text-3xl font-bold underline decoration-blue-600">Url Save</h1>
+        <h1 class="font-medium text-4xl text-sky-700 underline decoration-blue-950">Url Save</h1>
       </div>
 
         <!-- Fetch Database and show all posts -->

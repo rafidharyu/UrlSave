@@ -10,8 +10,8 @@
 </head>
 <body>
 
-<div class="bg-blue-950 flex items-center justify-center px-5 py-5">
-    <div class="bg-gray-100 text-gray-500 rounded-3xl shadow-xl w-full overflow-hidden" style="max-width:1000px">
+<div class="bg-blue-950 flex items-center justify-center px-5 py-5 pb-28">
+    <div class="bg-gray-100 text-gray-500 rounded-3xl shadow-xl w-full overflow-hidden mt-20" style="max-width:1000px">
         <div class="md:flex w-full">
             <div class="hidden md:block w-1/2 bg-sky-700 py-10 px-10">
                 <img src="./assets/undraw_sculpting_-1-c9p.svg" alt="svg-register">

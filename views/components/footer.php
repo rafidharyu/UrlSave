@@ -54,7 +54,7 @@
             </div>
 
             <div class="w-full pt-6 pb-1 border-t-2 border-blue-950">        
-                <p class="font-medium text-white text-center text-xs">© 2024 Kelompok? Inc.All rights reserved.</p>
+                <p class="font-medium text-white text-center text-xs">© 2024 Kelompok6 Inc.All rights reserved.</p>
             </div>
         </div>
     </footer>

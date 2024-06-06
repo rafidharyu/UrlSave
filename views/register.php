@@ -10,17 +10,15 @@
 </head>
 <body>
 
-    <?php include('./components/navbar.php'); ?>
-
-<div class="min-w-screen min-h-screen bg-gray-900 flex items-center justify-center px-5 py-5">
+<div class="bg-blue-950 flex items-center justify-center px-5 py-5">
     <div class="bg-gray-100 text-gray-500 rounded-3xl shadow-xl w-full overflow-hidden" style="max-width:1000px">
         <div class="md:flex w-full">
-            <div class="hidden md:block w-1/2 bg-indigo-500 py-10 px-10">
+            <div class="hidden md:block w-1/2 bg-sky-700 py-10 px-10">
                 <img src="./assets/undraw_sculpting_-1-c9p.svg" alt="svg-register">
             </div>
             <div class="w-full md:w-1/2 py-3 px-5 md:px-10">
                 <div class="text-center mb-2">
-                    <h1 class="font-bold text-3xl text-gray-900 mb-2">REGISTER</h1>
+                    <h1 class="font-bold text-3xl text-blue-950 mb-2">REGISTER</h1>
                     <p>Enter your information to register</p>
                 </div>
                 <div>
@@ -36,8 +34,8 @@
                                     <input  
                                     type="text" 
                                     name="first_name_register" 
-                                    class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500" 
-                                    placeholder="John" 
+                                    class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-sky-700" 
+                                    placeholder="Rafid" 
                                     required  
                                     title="Letters And Minimum 3"
                                     id="firstNameCheck"
@@ -55,8 +53,8 @@
                                     <input 
                                     name="last_name_register" 
                                     type="text" 
-                                    class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500" 
-                                    placeholder="Smith" 
+                                    class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-sky-700" 
+                                    placeholder="Haryu" 
                                     required title="Letters And Minimum 4"
                                     id="lastNameCheck"
                                     required 
@@ -77,8 +75,8 @@
                                     <input 
                                     name="email_register" 
                                     type="email" 
-                                    class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500" 
-                                    placeholder="johnsmith@example.com" 
+                                    class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-sky-700" 
+                                    placeholder="rafidharyu@example.com" 
                                     required>
                                 </div>
                             </div>
@@ -94,7 +92,7 @@
                                     id="password" 
                                     name="password_register" 
                                     type="password" 
-                                    class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500" 
+                                    class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-sky-700" 
                                     placeholder="************" 
                                     required minlength="8">
                                 </div>
@@ -110,7 +108,7 @@
                                 <label for="" class="text-xs font-semibold px-1">Confirm your password</label>
                                 <div class="flex" >                                                                                  
                                     <div class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center"><i class="fa-solid fa-lock text-gray-400 text-lg"></i></div>
-                                    <input id="confirm_password" name="password_register_confirm" type="password" class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500" placeholder="************" required minlength="8">
+                                    <input id="confirm_password" name="password_register_confirm" type="password" class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-sky-700" placeholder="************" required minlength="8">
                                 </div>
                             </div>
                         </div>

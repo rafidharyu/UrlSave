@@ -3,7 +3,7 @@
 $USER = 'root';
 $PASS = '';
 $HOST = 'localhost:3306';
-$db = 'login';
+$db = 'UAP';
 
 
 
@@ -50,12 +50,14 @@ try {
   
     // sql to create table
     $sql = "CREATE TABLE IF NOT EXISTS urlsave (
+      id INT AUTO_INCREMENT PRIMARY KEY,
       email VARCHAR(100) NOT NULL,
       url VARCHAR(500) NOT NULL,
       title VARCHAR(100) NOT NULL,
-      description VARCHAR(500) NOT NULL,
-      date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-      )";
+      caption VARCHAR(500) NOT NULL,
+      tag VARCHAR(100) NOT NULL,
+      created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+  );";
   
       
     // use exec() because no results are returned

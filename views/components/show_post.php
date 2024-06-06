@@ -55,7 +55,7 @@ if (!isset($_SESSION['user_id'])) {
 
               <div class="mt-4 max-w-3xl  px-2 py-4 bg-white rounded-md shadow-md ring-1 ring-gray-900/10">
                 <p class="text-lg font-semibold text-center underline"> 
-                <?php echo $result -> description?> 
+                <?php echo $result -> caption?> 
                 </p>
               </div>
 

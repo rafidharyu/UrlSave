@@ -4,14 +4,14 @@ session_start();
 
 require_once("../database/Connection.php");
 
-if(isset($_POST['url']) | isset($_POST['title']) | isset($_POST['description'])){
+if(isset($_POST['url']) | isset($_POST['title']) | isset($_POST['caption'])){
 
     $url = htmlspecialchars($_POST['url'], ENT_QUOTES, 'UTF-8');
     $title = htmlspecialchars($_POST['title'], ENT_QUOTES, 'UTF-8');
-    $description = htmlspecialchars($_POST['description'], ENT_QUOTES, 'UTF-8');
+    $caption = htmlspecialchars($_POST['caption'], ENT_QUOTES, 'UTF-8');
 
     //sql querys to insert data form
-    $sql = "INSERT INTO urlsave (email, url, title,  description) VALUES(:mail,:url,:title,:description)";
+    $sql = "INSERT INTO urlsave (email, url, title,  caption) VALUES(:mail,:url,:title,:caption)";
     //prepare query sentence
     $stmt = $conn -> prepare($sql);
 
@@ -19,7 +19,7 @@ if(isset($_POST['url']) | isset($_POST['title']) | isset($_POST['description']))
     $stmt->bindParam(":mail",$_SESSION['email']);
     $stmt->bindParam(":url",$url);
     $stmt->bindParam(":title",$title);
-    $stmt->bindParam(":description",$description);
+    $stmt->bindParam(":caption",$caption);
     
     
 
@@ -28,7 +28,7 @@ if(isset($_POST['url']) | isset($_POST['title']) | isset($_POST['description']))
 
         echo"<script>
         alert('$message!!!');
-        window.location.href='../views/components/show_post.php';
+        window.location.href='../views/index.php';
         </script>";
 
     }else{

@@ -20,7 +20,7 @@
         $password_login = $_POST['password_login'];
 
         //Database consulting 
-        $query = $conn->prepare( "SELECT id, email, password FROM register WHERE email= :email ");
+        $query = $conn->prepare( "SELECT id, email, name, password FROM register WHERE email= :email ");
         $query->bindParam( ':email', $mail_login );
         $query->execute();
         $results = $query -> fetch(PDO::FETCH_ASSOC);
@@ -36,9 +36,11 @@
                 window.location.href='/URLSAVE/views/login.php';
                 </script>";
         }else{
-            if (password_verify($password_login, $results['password'])) {
+            // if (password_verify($password_login, $results['password'])) {
+            if ($password_login == $results['password']) {
                 $_SESSION['user_id'] = $results['id'];
                 $_SESSION['email'] = $results['email'];
+                $_SESSION['username'] = $results['name'];
                 $message ="logged";
 
                 echo"<script>

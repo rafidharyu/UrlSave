@@ -15,7 +15,7 @@
             <div class="flex flex-wrap">
                 <div class="w-full pl-10 px-4 mb-12 text-slate-300 font-medium md:w-2/3">
                     <h2 class="font-bold text-4xl text-white mb-5">Contact with Us</h2>
-                    <p>urlsave.support@gmail.com</p>
+                    <p>email: urlsave.support@gmail.com</p>
                     <p>phone: +62 81558921481</p>
                     <div class="flex items-center mt-5">
                     <!-- Youtube -->

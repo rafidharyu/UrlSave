@@ -9,7 +9,7 @@
 <body>
 
 
-<nav class="bg-opacity-25 backdrop-filter backdrop-blur-lg sticky top-0 z-50 flex justify-around py-10 mx-auto bg-white shadow-2xl">
+<nav class="bg-opacity-25 backdrop-filter backdrop-blur-lg sticky top-0 z-50 flex justify-around py-7 mx-auto bg-white shadow-2xl">
   <div class="flex items-center">
     <h3 class="absolute start-10 text-2xl font-medium text-sky-700">Url Save</h3>
   </div>
@@ -17,10 +17,45 @@
 
   <!-- right header section -->
   <div class="flex items-center space-x-2">
-
+  <nav>
+      <ul class="block lg:flex">
+          <li class="group">
+              <a href="index.php" class="text-base text-dark mx-8 flex  group-hover:text-sky-700">URL</a>
+          </li>
+          <li class="group">
+              <a href="caption.php" class="text-base text-dark mx-8 flex  group-hover:text-sky-700">Caption</a>
+          </li>
+          <li class="group">
+              <a href="tag.php" class="text-base text-dark mx-8 flex group-hover:text-sky-700">Tag</a>
+          </li>
+          <li class="group">
+              <a href="#clients" class="text-base text-dark mx-8 flex  group-hover:text-sky-700">???</a>
+          </li>
+      </ul>
+  </nav>
   <?php if(basename($_SERVER['PHP_SELF']) == 'index.php'){ ?>
     <form method="POST" action="../controller/logout.php">
-        <button class="absolute top-6 end-10 bg-transparent hover:bg-red-500 text-red-700 font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded"
+        <button class="absolute top-4 end-10 bg-transparent hover:bg-red-500 text-red-700 font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded"
+        type="submit"
+        name="loggout"
+        >
+        Loggout
+        </button>
+    </form>
+   <?php }
+   elseif(basename($_SERVER['PHP_SELF']) == 'caption.php'){ ?>
+    <form method="POST" action="../controller/logout.php">
+        <button class="absolute top-4 end-10 bg-transparent hover:bg-red-500 text-red-700 font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded"
+        type="submit"
+        name="loggout"
+        >
+        Loggout
+        </button>
+    </form>
+   <?php }
+   elseif(basename($_SERVER['PHP_SELF']) == 'tag.php'){ ?>
+    <form method="POST" action="../controller/logout.php">
+        <button class="absolute top-4 end-10 bg-transparent hover:bg-red-500 text-red-700 font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded"
         type="submit"
         name="loggout"
         >

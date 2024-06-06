@@ -6,17 +6,17 @@
 
         $url = htmlspecialchars($_POST['url'], ENT_QUOTES, 'UTF-8');
         $title = htmlspecialchars($_POST['title'], ENT_QUOTES, 'UTF-8');
-        $description = htmlspecialchars($_POST['description'], ENT_QUOTES, 'UTF-8');
+        $caption = htmlspecialchars($_POST['caption'], ENT_QUOTES, 'UTF-8');
         
         //sql querys to insert data form
-        $sql = "UPDATE urlsave SET url=:url, title=:title, description=:description WHERE date=:codigo";
+        $sql = "UPDATE urlsave SET url=:url, title=:title, caption=:caption WHERE date=:codigo";
         //prepare query sentence
         $stmt = $conn -> prepare($sql);
 
         //insert query with the values into a sql database
         $stmt->bindParam(":url",$url);
         $stmt->bindParam(":title",$title);
-        $stmt->bindParam(":description",$description);
+        $stmt->bindParam(":caption",$caption);
         $stmt->bindParam(":codigo",$_POST['codigo']);
         
         

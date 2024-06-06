@@ -41,7 +41,7 @@ if (!empty($_POST['first_name_register'])
             $stmt = $conn -> prepare($sql);
             
             //encrypt the password
-            $pass = password_hash($pass,PASSWORD_BCRYPT);
+            // $pass = password_hash($pass,PASSWORD_BCRYPT);
 
             //insert query with the values into a sql database
             $stmt->bindParam(":name",$name);

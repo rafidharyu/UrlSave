@@ -1,16 +1,28 @@
+<?php
+require_once('../controller/show_post.php');
+if (!isset($_SESSION['user_id'])) {
+    header('location: ./login.php');
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com/?plugins=forms"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="src/output.css" rel="stylesheet">
+    <title>index</title>
 </head>
 <body>
-    
+
+    <?php include('./components/navbar.php'); ?>
+
     <div class="container max-w-7xl mx-auto mt-8">
     <div class="mb-4">
-        <h1 class="font-medium text-4xl text-sky-700 underline decoration-blue-950">Your Urls</h1>
+        <h1 class="font-medium text-4xl text-sky-700 underline decoration-blue-950">Your Caption</h1>
         <div class="flex justify-end mr-1">
         <a href="./components/create_post.php"> 
                 <button class="px-4 py-2 rounded-md bg-sky-700 text-white hover:bg-sky-600">
@@ -31,33 +43,12 @@
 
                     <th
                         class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-                        Title
-                    </th>
-
-                    <th
-                        class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-                        Url
-                    </th>
-
-                    <th
-                        class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
                         caption
-                    </th>
-
-                    <th
-                        class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-                        tag
-                    </th>
-
-                    <th
-                        class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-                        ??
                     </th>
 
                     <th class="px-6 py-3 text-sm text-left text-gray-500 border-b border-gray-200 bg-gray-50" colspan="3">
                         Action
                     </th>
-
                 </tr>
             </thead>
 
@@ -69,36 +60,10 @@
                 ?>
 
                 <tr>
-                    
-                    <!--Show the title post-->
-                    <td class=" px-6 whitespace-no-wrap border-b border-gray-200">
-                        <div class="text-lg leading-5 text-gray-900">
-                             <?php echo $result -> title?> 
-                        </div>
-                    </td>
-                    
-                    <!--Show Url links-->
-                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
-                        <div class="text-lg leading-5 text-blue-900">
-                             <a href="<?php echo $result -> url?>" target="_blank"><?php echo $result -> url?></a>
-                        </div>
-                    </td>
-                    
-                    <!--Show caption-->
-                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
-                        <p class="text-lg"><?php echo $result -> caption?></p>
-                    </td>
-
                     <!--Show Tag-->
-                    <td class=" pr-8 py-4 text-lg leading-5 text-gray-500 whitespace-no-wrap border-b border-gray-200">
-                        <span class=""><?php echo $result -> tag?></span>
+                    <td class="py-4 pr-96 text-lg leading-5 text-gray-500 whitespace-no-wrap border-b border-gray-200">
+                        <span class=""><?php echo $result -> caption?></span>
                     </td>
-
-                    <!-- show ? -->
-                    <td class=" pr-8 py-4 text-lg leading-5 text-gray-500 whitespace-no-wrap border-b border-gray-200">
-                        <span class=""><?php echo $result -> tag?></span>
-                    </td>
-
 
                     <!-- Edit icon -->
                         <td class="text-sm font-medium leading-5 text-center whitespace-no-wrap border-b border-gray-200 ">

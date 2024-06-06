@@ -8,8 +8,6 @@
     <title>Login</title>
 </head>
 <body>
-  
-  <?php include('./components/navbar.php'); ?>
 
   <section class="h-screen">
     <div class="px-6 h-full text-gray-800">

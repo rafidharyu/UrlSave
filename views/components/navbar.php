@@ -29,7 +29,7 @@
               <a href="tag.php" class="text-base text-dark mx-8 flex group-hover:text-sky-700">Tag</a>
           </li>
           <li class="group">
-              <a href="#clients" class="text-base text-dark mx-8 flex  group-hover:text-sky-700">???</a>
+              <a href="../social/social.php" class="text-base text-dark mx-8 flex  group-hover:text-sky-700">Social</a>
           </li>
       </ul>
   </nav>

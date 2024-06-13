@@ -49,21 +49,36 @@ $results = $conn->query($sql)->fetchAll(PDO::FETCH_OBJ);
                 ?>
                 <tr>
                     <td class="py-4 pr-96 text-lg leading-5 text-gray-500 whitespace-no-wrap border-b border-gray-200">
-                        <span class=""><?php echo $result->instagram ?></span>
+                        <span class="">
+                            <a href="<?php echo $result->instagram ?>">
+                            <?php echo $result->instagram ?>
+                            </a>
+                    </span>
                     </td>
                     <td class="py-4 pr-96 text-lg leading-5 text-gray-500 whitespace-no-wrap border-b border-gray-200">
-                        <span class=""><?php echo $result->linkedin ?></span>
+                        <span class="">
+                            <a href="<?php echo $result->linkedin ?>">
+                            <?php echo $result->linkedin ?>
+                            </a>
+                        </span>
                     </td>
                     <td class="py-4 pr-96 text-lg leading-5 text-gray-500 whitespace-no-wrap border-b border-gray-200">
-                        <span class=""><?php echo $result->x ?></span>
+                        <span class="">
+                            <a href="<?php echo $result->x ?>">
+                                <?php echo $result->x ?>
+                            </a>
+                            </span>
                     </td>
                     <td class="py-4 pr-96 text-lg leading-5 text-gray-500 whitespace-no-wrap border-b border-gray-200">
-                        <span class=""><?php echo $result->facebook ?></span>
+                        <span class=""><a href="<?php echo $result->facebook ?>">
+                            <?php echo $result->facebook ?>
+                            </a>
+                        </span>
                     </td>
                     <!-- Edit icon -->
                     <td class="text-sm font-medium leading-5 text-center whitespace-no-wrap border-b border-gray-200 ">
                         <!-- identify the post -->
-                        <a href="../views/components/edit_post.php?codigo=<?php echo $result->id_sosmed ?>" class="text-indigo-600 hover:text-indigo-900">
+                        <a href="edit_post.php?codigo=<?php echo $result->id_sosmed ?>" class="text-indigo-600 hover:text-indigo-900">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
@@ -72,7 +87,7 @@ $results = $conn->query($sql)->fetchAll(PDO::FETCH_OBJ);
                     </td>
                     <!-- see icon -->
                     <td class="text-sm font-medium leading-5 text-center whitespace-no-wrap border-b border-gray-200 ">
-                        <a href="/URLSAVE/views/components/show_post.php?codigo=<?php echo $result->id_sosmed ?>" class="text-gray-600 hover:text-gray-900">
+                        <a href="show_post.php?codigo=<?php echo $result->id_sosmed ?>" class="text-gray-600 hover:text-gray-900">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />

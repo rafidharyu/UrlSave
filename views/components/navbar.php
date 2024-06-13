@@ -20,13 +20,13 @@
   <nav>
       <ul class="block lg:flex">
           <li class="group">
-              <a href="index.php" class="text-base text-dark mx-8 flex  group-hover:text-sky-700">URL</a>
+              <a href="/URLSAVE/views/index.php" class="text-base text-dark mx-8 flex  group-hover:text-sky-700">URL</a>
           </li>
           <li class="group">
-              <a href="caption.php" class="text-base text-dark mx-8 flex  group-hover:text-sky-700">Caption</a>
+              <a href="/URLSAVE/views/caption.php" class="text-base text-dark mx-8 flex  group-hover:text-sky-700">Caption</a>
           </li>
           <li class="group">
-              <a href="tag.php" class="text-base text-dark mx-8 flex group-hover:text-sky-700">Tag</a>
+              <a href="/URLSAVE/views/tag.php" class="text-base text-dark mx-8 flex group-hover:text-sky-700">Tag</a>
           </li>
           <li class="group">
               <a href="../social/social.php" class="text-base text-dark mx-8 flex  group-hover:text-sky-700">Social</a>
@@ -39,7 +39,7 @@
         type="submit"
         name="loggout"
         >
-        Loggout
+        Log out
         </button>
     </form>
    <?php }
@@ -49,7 +49,7 @@
         type="submit"
         name="loggout"
         >
-        Loggout
+        Log Out
         </button>
     </form>
    <?php }
@@ -59,7 +59,7 @@
         type="submit"
         name="loggout"
         >
-        Loggout
+        Log Out
         </button>
     </form>
    <?php }

@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->bindParam(':id', $id);
     $stmt->execute();
 
-    header('Location: index.php');
+    header('Location: ecommerce.php');
 } else {
     $sql = "SELECT * FROM ecommerce WHERE id_ecommerce = :id";
     $stmt = $conn->prepare($sql);

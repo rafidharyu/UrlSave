@@ -10,5 +10,5 @@ $sql = "INSERT INTO Sosmed (instagram, linkedin, x, facebook) VALUES (:instagram
 $stmt = $conn->prepare($sql);
 $stmt->execute(['instagram' => $instagram, 'linkedin' => $linkedin, 'x' => $x, 'facebook' => $facebook]);
 
-header("Location: ../views/index.php");
+header("Location: social.php");
 ?>

@@ -76,17 +76,6 @@ $results = $query -> fetch(PDO::FETCH_OBJ);
                 />
               </div>
 
-              <!-- caption -->
-              <div class="mt-4">
-                <label class="block text-lg font-bold text-gray-700">
-                  caption
-                </label>
-                <textarea 
-                  name="caption"
-                  class="block w-full mt-1 border-gray-400 rounded-md shadow-sm placeholder:text-gray-400 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                  rows="4"><?php echo $results -> caption?></textarea>
-              </div>
-
               <div class="flex items-center justify-start mt-4">
 
                   <input type="hidden" name="codigo" value="<?php echo $results -> date?>">

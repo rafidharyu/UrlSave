@@ -46,13 +46,13 @@
 
                     <th
                         class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-                        tag
+                        date
                     </th>
 
-                    <th
+                    <!-- <th
                         class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
                         ??
-                    </th>
+                    </th> -->
 
                     <th class="px-6 py-3 text-sm text-left text-gray-500 border-b border-gray-200 bg-gray-50" colspan="3">
                         Action
@@ -91,12 +91,7 @@
 
                     <!--Show Tag-->
                     <td class=" pr-8 py-4 text-lg leading-5 text-gray-500 whitespace-no-wrap border-b border-gray-200">
-                        <span class=""><?php echo $result -> tag?></span>
-                    </td>
-
-                    <!-- show ? -->
-                    <td class=" pr-8 py-4 text-lg leading-5 text-gray-500 whitespace-no-wrap border-b border-gray-200">
-                        <span class=""><?php echo $result -> tag?></span>
+                        <span class=""><?php echo $result -> date?></span>
                     </td>
 
 

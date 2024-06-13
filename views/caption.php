@@ -24,7 +24,7 @@ if (!isset($_SESSION['user_id'])) {
     <div class="mb-4">
         <h1 class="font-medium text-4xl text-sky-700 underline decoration-blue-950">Your Caption</h1>
         <div class="flex justify-end mr-1">
-        <a href="./components/create_post.php"> 
+        <a href="./components/create_caption.php"> 
                 <button class="px-4 py-2 rounded-md bg-sky-700 text-white hover:bg-sky-600">
                     
                         Create New Register
@@ -54,7 +54,7 @@ if (!isset($_SESSION['user_id'])) {
 
             <tbody class="bg-white">
                 
-                <!-- Fetch Database and show all posts -->
+                <!-- Fetch Database and show all captions -->
                 <?php 
                     foreach($results as $result){
                 ?>
@@ -67,8 +67,8 @@ if (!isset($_SESSION['user_id'])) {
 
                     <!-- Edit icon -->
                         <td class="text-sm font-medium leading-5 text-center whitespace-no-wrap border-b border-gray-200 ">
-                            <!-- identify the post -->
-                            <a href="../views/components/edit_post.php?codigo=<?php echo $result -> date?>" class="text-indigo-600 hover:text-indigo-900">
+                            <!-- identify the caption -->
+                            <a href="../views/components/edit_caption.php?codigo=<?php echo $result -> date?>" class="text-indigo-600 hover:text-indigo-900">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -79,7 +79,7 @@ if (!isset($_SESSION['user_id'])) {
 
                     <!-- see icon -->
                         <td class="text-sm font-medium leading-5 text-center whitespace-no-wrap border-b border-gray-200 ">
-                            <a href="/URLSAVE/views/components/show_post.php" class="text-gray-600 hover:text-gray-900">
+                            <a href="/URLSAVE/views/components/show_caption.php" class="text-gray-600 hover:text-gray-900">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -93,7 +93,7 @@ if (!isset($_SESSION['user_id'])) {
                     <!-- delete icon -->
                         
                         <td class="text-sm font-medium leading-5 whitespace-no-wrap border-b border-gray-200 ">
-                            <a onclick="return confirm('Are You Sure You Want To Delete??');" href="/URLSAVE/controller/delete_post.php?codigo=<?php echo $result -> date?>"><svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-red-600 hover:text-red-800"
+                            <a onclick="return confirm('Are You Sure You Want To Delete??');" href="/URLSAVE/controller/delete_caption.php?codigo=<?php echo $result -> date?>"><svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-red-600 hover:text-red-800"
                                 fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />

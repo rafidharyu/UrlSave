@@ -26,10 +26,10 @@
               <a href="/URLSAVE/views/caption.php" class="text-base text-dark mx-8 flex  group-hover:text-sky-700">Caption</a>
           </li>
           <li class="group">
-              <a href="/URLSAVE/views/tag.php" class="text-base text-dark mx-8 flex group-hover:text-sky-700">Tag</a>
+              <a href="/URLSAVE/ecommerce/ecommerce.php" class="text-base text-dark mx-8 flex group-hover:text-sky-700">E-Commerce</a>
           </li>
           <li class="group">
-              <a href="../social/social.php" class="text-base text-dark mx-8 flex  group-hover:text-sky-700">Social</a>
+              <a href="/URLSAVE/social/social.php" class="text-base text-dark mx-8 flex  group-hover:text-sky-700">Social</a>
           </li>
       </ul>
   </nav>
